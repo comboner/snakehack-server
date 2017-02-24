@@ -108,6 +108,16 @@ defmodule BattleSnake.GameServer.Server do
       :cont ->
         state = State.step(state)
         if State.done?(state) do
+          spawn fn ->
+            Process.sleep(1000)
+            # {:ok, pid} = GenServer.stop
+            {:ok, pid} = BattleSnake.GameServer.Registry.lookup_or_create(state.game_form_id)
+            GenServer.stop(pid, :normal)
+            Process.sleep(100)
+            {:ok, pid} = BattleSnake.GameServer.Registry.lookup_or_create(state.game_form_id)
+            BattleSnake.GameServer.resume(pid)
+          end
+
           state = State.on_done(state)
           {:noreply, halted!(state)}
         else
