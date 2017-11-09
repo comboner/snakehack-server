@@ -1,5 +1,5 @@
 
-#SnakeHack 2017 Game Server
+# SnakeHack 2017 Game Server
 
 * [API documentation](https://stair-ch.github.io/snakehack-server/index.html)
 * [Event Information](https://snakehack.stair.ch/)
