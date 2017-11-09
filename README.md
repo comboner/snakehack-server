@@ -5,15 +5,12 @@ The SnakeHack 2017 Game Server
 * [Event Information](https://snakehack.stair.ch/)
 * [STAIR](https://stair.ch/)
 
-[![Build Status](https://travis-ci.org/StemboltHQ/battle_snake.svg?branch=master)](https://travis-ci.org/StemboltHQ/battle_snake) [![Coverage Status](https://coveralls.io/repos/github/StemboltHQ/battle_snake/badge.svg?branch=master)](https://coveralls.io/github/StemboltHQ/battle_snake?branch=master) [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/stembolt/battle_snake/)
-
 ![Example Game Animation](docs/game.gif)
 
 ## Running With Docker
 
 * Install [Docker](https://docs.docker.com/engine/installation/)
-* `docker run -it -p 4000:4000 stembolt/battle_snake`
-* `docker run -p 4000:4000 stairch/snakehack-server`
+* `docker run -it -p 4000:4000 stairch/snakehack-server`
 * Connect to http://localhost:4000
 
 **Note:** Docker runs on a virtual lan so when you add a snake to the game you cannot use `localhost`, use your internal IP instead.
