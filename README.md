@@ -10,7 +10,7 @@
 ## Running With Docker
 
 * Install [Docker](https://docs.docker.com/engine/installation/)
-* `docker run -it -p 4000:4000 stairch/snakehack-server`
+* `docker run --name snakehackserver -it -p 4000:4000 stairch/snakehack-server`
 * Connect to http://localhost:4000
 
 **Note:** Docker runs on a virtual lan so when you add a snake to the game you cannot use `localhost`, use your internal IP instead.
