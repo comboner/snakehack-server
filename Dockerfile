@@ -1,7 +1,7 @@
 FROM elixir:1.4.1
 WORKDIR /app
 RUN apt-get update
-RUN apt-get install -y npm nodejs nodejs-legacy inotify-tools ruby
+RUN apt-get install -y npm nodejs nodejs-legacy inotify-tools ruby ruby-dev
 ADD . .
 RUN mix local.hex --force
 RUN mix deps.get

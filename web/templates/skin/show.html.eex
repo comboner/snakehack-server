@@ -13,7 +13,7 @@
 
   <body>
     <script>
-      window.BattleSnake = <%= raw battle_snake_js_object(assigns) %>; 
+      window.BattleSnake = <%= raw battle_snake_js_object(assigns) %>;
     </script>
     <script src="<%= static_path(@conn, "/js/skin.js") %>"></script>
 
@@ -31,7 +31,7 @@
      .nopadding {
          padding: 0px;
      }
-     
+
      body {
          font-family: 'Montserrat', sans-serif
          margin: 0px;
@@ -155,7 +155,7 @@
      #audio-controls-popup:hover > #audio-controls {
          top: 0px;
      }
-     
+
      #audio-controls-popup:hover > #audio-controls-popup-button {
          opacity: 0;
      }
@@ -182,7 +182,7 @@
          transition-property: opacity;
          transition-duration: 500ms;
      }
-     
+
      .audio-horiz {
          display: flex;
          align-items: center;
@@ -191,7 +191,7 @@
      .audio-volume {
          flex-grow: 1;
      }
-     
+
      .audio-on {
          width: 75px;
          text-align: left;
@@ -206,7 +206,7 @@
   </head>
 
   <body>
-    
+
     <div id="audio-controls-popup">
       <div id="audio-controls">
         <div class="audio-horiz">
@@ -229,9 +229,9 @@
     <div id="scoreboard-panel">
       <div id="scoreboard-game-info" class="scoreboard-game-info-wrapper">
         <div id="scoreboard-logo">
-          <%= img_tag "/images/bs-logo-light.svg", class: "scoreboard-logo" %>
+          <%= img_tag "/images/bs-logo-dark.png", class: "scoreboard-logo" %>
         </div>
-        
+
         <div class="scoreboard-flag-container">
           <div class="scoreboard-flag">
             <img class="scoreboard-division-img" src="/images/division-advanced.svg">
@@ -253,7 +253,7 @@
         </div>
       </div>
     </div>
-    
+
     <div id="snake-info-list"></div>
 
     <!-- snake-info-block-template -->
@@ -276,4 +276,3 @@
     </div>
   </body>
 </html>
-

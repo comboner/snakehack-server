@@ -1,5 +1,5 @@
 <div class="scoreboard">
-  <%= img_tag "/images/bs-logo-light.svg", class: "scoreboard-logo" %>
+  <%= img_tag "/images/bs-logo-dark.png", class: "scoreboard-logo" %>
   <div class="scoreboard-flag-container">
     <div class="scoreboard-flag">
       <img class="scoreboard-division-img"
