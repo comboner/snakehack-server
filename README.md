@@ -12,7 +12,6 @@ The SnakeHack 2017 Game Server
 ## Running With Docker
 
 * Install [Docker](https://docs.docker.com/engine/installation/)
-* `docker run -it -p 4000:4000 stembolt/battle_snake`
 * `docker run -p 4000:4000 stairch/snakehack-server`
 * Connect to http://localhost:4000
 
