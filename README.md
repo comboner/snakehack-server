@@ -5,6 +5,8 @@
 * [Event Information](https://snakehack.stair.ch/)
 * [STAIR](https://stair.ch/)
 
+An instance of the server is running here: [http://snakehack.enterpriselab.ch](http://snakehack.enterpriselab.ch)
+
 ![Example Game Animation](docs/game.gif)
 
 ## Running With Docker
